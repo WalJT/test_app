@@ -4,6 +4,9 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPalette
 from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLayout
 
+def close_when_clicked():
+    app.Close()
+
 # Create Application
 app = QApplication([])
 
@@ -26,10 +29,18 @@ app.setStyleSheet("QPushButton { margin: 10px; }")
 # Layouts and Buttons
 window = QWidget()
 layout = QVBoxLayout()
-layout.addWidget(QPushButton('Useless Button 1'))
-layout.addWidget(QPushButton('Useless Button 2'))
+
+button1 = QPushButton('Usless Button')
+layout.addWidget(button1)
+
+button2 = QPushButton('The Close Button')
+layout.addWidget(button2)
+
 window.setLayout(layout)
 window.setWindowTitle("A Pointless Application")
+
+# Run a function when a button is clicked
+button2.clicked.connect(close_when_clicked)
 
 # Show?
 #label.show()
