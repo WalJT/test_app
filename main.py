@@ -8,16 +8,19 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLay
 app = QApplication([])
 
 # Use a Custom Style
-app.setStyle("Windows")
+app.setStyle("fusion")
+
+# Using style sheet to modify button margins
+app.setStyleSheet("QPushButton { margin: 10px; }")
 
 # Add Label
 #label = QLabel("Hello World")
 
 # Modifications to Colour Pallet
 palette = QPalette()
-palette.setColor(QPalette.ButtonText, Qt.green)
-palette.setColor(QPalette.Button, Qt.black)
-palette.setColor(QPalette.Background, Qt.blue)
+palette.setColor(QPalette.ButtonText, Qt.black)
+palette.setColor(QPalette.Button, Qt.white)
+palette.setColor(QPalette.Background, Qt.gray)
 app.setPalette(palette)
 
 # Layouts and Buttons
