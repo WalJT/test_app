@@ -5,6 +5,9 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLay
 # Create Application
 app = QApplication([])
 
+# Use a Custom Style
+app.setStyle("Windows")
+
 # Add Label
 #label = QLabel("Hello World")
 
