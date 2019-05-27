@@ -8,14 +8,16 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLay
 app = QApplication([])
 
 # Use a Custom Style
-app.setStyle("Fusion")
+app.setStyle("Windows")
 
 # Add Label
 #label = QLabel("Hello World")
 
 # Modifications to Colour Pallet
 palette = QPalette()
-palette.setColor(QPalette.ButtonText, Qt.red)
+palette.setColor(QPalette.ButtonText, Qt.green)
+palette.setColor(QPalette.Button, Qt.black)
+palette.setColor(QPalette.Background, Qt.blue)
 app.setPalette(palette)
 
 # Layouts and Buttons
