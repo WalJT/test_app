@@ -2,16 +2,20 @@
 
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPalette
-from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox
 
 def close_when_clicked():
+    info = QMessageBox()
+    info.setWindowTitle("WARNING")
+    info.setText("The App Will Now Close!")
+    info.exec_()
     app.closeAllWindows()
 
 # Create Application
 app = QApplication([])
 
 # Use a Custom Style
-#app.setStyle("fusion")
+app.setStyle("Windows")
 
 # Using style sheet to modify button margins
 app.setStyleSheet("QPushButton { margin: 10px; }")
