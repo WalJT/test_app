@@ -1,4 +1,5 @@
 # rubbish_app
 
 My first try at GUI app development...
-Just following a tutorial so far.
+
+Just following the tutorial [here](https://build-system.fman.io/pyqt5-tutorial) tutorial so far.
