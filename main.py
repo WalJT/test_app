@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLay
 app = QApplication([])
 
 # Use a Custom Style
-app.setStyle("fusion")
+#app.setStyle("fusion")
 
 # Using style sheet to modify button margins
 app.setStyleSheet("QPushButton { margin: 10px; }")
@@ -17,11 +17,11 @@ app.setStyleSheet("QPushButton { margin: 10px; }")
 #label = QLabel("Hello World")
 
 # Modifications to Colour Pallet
-palette = QPalette()
-palette.setColor(QPalette.ButtonText, Qt.black)
-palette.setColor(QPalette.Button, Qt.white)
-palette.setColor(QPalette.Background, Qt.gray)
-app.setPalette(palette)
+# palette = QPalette()
+# palette.setColor(QPalette.ButtonText, Qt.black)
+# palette.setColor(QPalette.Button, Qt.white)
+# palette.setColor(QPalette.Background, Qt.gray)
+# app.setPalette(palette)
 
 # Layouts and Buttons
 window = QWidget()
@@ -29,6 +29,7 @@ layout = QVBoxLayout()
 layout.addWidget(QPushButton('Useless Button 1'))
 layout.addWidget(QPushButton('Useless Button 2'))
 window.setLayout(layout)
+window.setWindowTitle("A Pointless Application")
 
 # Show?
 #label.show()
