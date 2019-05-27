@@ -6,17 +6,17 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLay
 app = QApplication([])
 
 # Add Label
-label = QLabel("Hello World")
+#label = QLabel("Hello World")
 
 # Layouts and Buttons
 window = QWidget()
 layout = QVBoxLayout()
-layout.addWidget(QPushButton('Top'))
-layout.addWidget(QPushButton('Bottom'))
+layout.addWidget(QPushButton('Useless Button 1'))
+layout.addWidget(QPushButton('Useless Button 2'))
 window.setLayout(layout)
 
 # Show?
-label.show()
+#label.show()
 window.show()
 
 # Run app until user quits
