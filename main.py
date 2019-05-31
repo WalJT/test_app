@@ -24,11 +24,12 @@ app.setStyleSheet("QPushButton { margin: 10px; }")
 #label = QLabel("Hello World")
 
 # Modifications to Colour Pallete
-palette = QPalette()
-palette.setColor(QPalette.ButtonText, Qt.white)
-palette.setColor(QPalette.Button, Qt.darkBlue)
-palette.setColor(QPalette.Background, Qt.black)
-app.setPalette(palette)
+# palette = QPalette()
+# palette.setColor(QPalette.ButtonText, Qt.white)
+# palette.setColor(QPalette.Button, Qt.darkBlue)
+# palette.setColor(QPalette.Background, Qt.black)
+# #palette.setColor(QPalette.text, Qt.white)
+# app.setPalette(palette)
 
 # Layouts and Buttons
 window = QWidget()
