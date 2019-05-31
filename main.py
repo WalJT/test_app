@@ -15,7 +15,7 @@ def close_when_clicked():
 app = QApplication([])
 
 # Use a Custom Style
-app.setStyle("Windows")
+#app.setStyle("Breeze")
 
 # Using style sheet to modify button margins
 app.setStyleSheet("QPushButton { margin: 10px; }")
@@ -24,11 +24,11 @@ app.setStyleSheet("QPushButton { margin: 10px; }")
 #label = QLabel("Hello World")
 
 # Modifications to Colour Pallete
-# palette = QPalette()
-# palette.setColor(QPalette.ButtonText, Qt.black)
-# palette.setColor(QPalette.Button, Qt.white)
-# palette.setColor(QPalette.Background, Qt.gray)
-# app.setPalette(palette)
+palette = QPalette()
+palette.setColor(QPalette.ButtonText, Qt.white)
+palette.setColor(QPalette.Button, Qt.darkBlue)
+palette.setColor(QPalette.Background, Qt.black)
+app.setPalette(palette)
 
 # Layouts and Buttons
 window = QWidget()
