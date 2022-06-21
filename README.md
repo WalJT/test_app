@@ -1,4 +1,4 @@
-# rubbish_app
+# test_app
 
 ![Screenshot](screenshot.png)
 
